@@ -173,7 +173,7 @@ import AcuantCommon
         }
     }
 
-    private func setLookFromState(state: DocumentCameraController.CameraState) {
+    public func setLookFromState(state: DocumentCameraController.CameraState) {
         switch state {
         case DocumentCameraController.CameraState.MoveCloser:
             self.messageLayer.setDefaultSettings(frame: self.view.frame)

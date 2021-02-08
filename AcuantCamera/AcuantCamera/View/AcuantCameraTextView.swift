@@ -21,7 +21,7 @@ public class AcuantCameraTextView: CATextLayer{
     private var isShown = false
     private var currentColor = UIColor.red.cgColor
     
-    init(autoCapture: Bool = true){
+    public init(autoCapture: Bool = true){
         super.init()
         self.opacity = 0.7
         if(autoCapture){
@@ -34,7 +34,7 @@ public class AcuantCameraTextView: CATextLayer{
         self.cornerRadius = 10;
     }
     
-    internal func setFrame(frame: CGRect) {
+    public func setFrame(frame: CGRect) {
         self.setDefaultSettings(frame: frame)
     }
     

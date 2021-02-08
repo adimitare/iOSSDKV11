@@ -32,7 +32,7 @@ public class CameraCornerOverlayView : CALayer{
         super.init(coder: aDecoder)
     }
     
-    internal func setFrame(frame: CGRect) {
+    public func setFrame(frame: CGRect) {
         self.setDefaultCorners(frame: frame)
     }
     
@@ -75,7 +75,7 @@ public class CameraCornerOverlayView : CALayer{
         return getCorners(current: updated, p1: point2, p2: point4)
     }
     
-    internal func setCorners(point1: CGPoint, point2: CGPoint, point3: CGPoint, point4: CGPoint){
+    public func setCorners(point1: CGPoint, point2: CGPoint, point3: CGPoint, point4: CGPoint){
         let corners = getCorners(point1: point1, point2: point2, point3: point3, point4: point4)
         
         animate(x: Int(corners[0]!.x), y: Int(corners[0]!.y), offsetx:bracketWidth!, offsety:bracketHeight!, view: self.corners[0])
